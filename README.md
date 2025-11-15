@@ -1,22 +1,27 @@
-# TC-S-Network-Solar-Standard
+# TC-S Network Solar Standard
 
-Protocol documentation and specifications
+Energy conversion and validation protocol for the Solar Standard.
 
-## Part of TC-S Network Platform
+## Features
 
-This repository is part of the TC-S Network 14-repository microservices architecture. All services connect to a shared Supabase database and work together as a cohesive platform.
+- kWh to SOLAR conversion (constant: 4913.0)
+- SOLAR to kWh conversion
+- Energy validation and verification
+- Protocol compliance checking
 
 ## Setup
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-## Documentation
+## API Endpoints
 
-See the main [TC-S Network documentation](https://github.com/tdfranklin101-ui/TC-S-Network-Shared) for complete setup instructions.
+- `POST /api/convert/kwh-to-solar` - Convert kWh to SOLAR
+- `POST /api/convert/solar-to-kwh` - Convert SOLAR to kWh
 
 ## License
 
-MIT © TC-S Network Foundation
+MIT - TC-S Network Foundation
